@@ -5,46 +5,348 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="shortcut icon" type="image/png" href="images/logo.png">
-    <script src="https://kit.fontawesome.com/c6681a1b07.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Furniture Store</title>
 </head>
 <body> 
 
-    <!-- Navbar -->
+    <!-- Modal Box -->
+    <input type="checkbox" id="show-hide-forms" hidden>
+    <div class="forms-wrapper">
+        <label for="show-hide-forms" class="x-btn">&#10005;</label>
+        <input type="checkbox" id="show-form" hidden>
+        <div class="show-btns-wrapper">
+            <label for="show-form" class="show-form-btn show-signup-form">Sign Up</label>
+            <label for="show-form" class="show-form-btn show-login-form">Log In</label>
+        </div>
 
-    <!--Social Media Icons-->
+        <form class="signup-form">
+            <h3 class="form-heading">Sign Up</h3>
+            <div class="fullname-inputs-wrapper">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Second Name">
+            </div>
+            <input type="text" class="form-input" placeholder="Username">
+            <input type="email" class="form-input" placeholder="Email Address">
+            <input type="password" class="form-input" placeholder="Password">
+            <input type="submit" value="SIGN UP" class="form-btn">
+        </form>
+
+        <form class="login-form">
+            <h3 class="form-heading">Log In</h3>
+            <input type="email" class="form-input" placeholder="Email Address">
+            <input type="password" class="form-input" placeholder="Password">
+            <input type="submit" value="LOG IN" class="form-btn">
+        </form>
+    </div>
+
+    <!-- End of Modal Box -->
+
     <div class="container">
+
+        <!-- Navbar -->
         <ul class="social-icons">
             <li class="social-icon-item">
-                <a href="#" class="social-icon-link"><i class="fa-brands fa-facebook-square social-icon"></i></a>
-                <a href="#" class="social-icon-link"><i class="fa-brands fa-instagram-square social-icon"></i></a>
-                <a href="#" class="social-icon-link"><i class="fa-brands fa-youtube social-icon"></i></a>
-                <a href="#" class="social-icon-link"><i class="fa-brands fa-twitter-square social-icon"></i></a>
+                <a href="#" class="social-icon-link"><i class="fab fa-facebook-square social-icon"></i></a>
+            </li>
+            <li class="social-icon-item">
+                <a href="#" class="social-icon-link"><i class="fab fa-linkedin social-icon"></i></a>
+            </li>
+            <li class="social-icon-item">
+                <a href="#" class="social-icon-link"><i class="fab fa-twitter-square social-icon"></i></a>
+            </li>
+            <li class="social-icon-item">
+                <a href="#" class="social-icon-link"><i class="fab fa-instagram social-icon"></i></a>
             </li>
         </ul>
 
         <nav class="first-nav">
             <ul class="first-nav-list">
                 <li class="first-nav-item">
-                    <a href="" class="first-nav-link nav-name"><i class="fas fa-sign-in-alt"></i>Sign Up | Log-In</a>
+                    <a href="#" class="first-nav-link"><label for="show-hide-forms"><i class="fas fa-sign-in-alt"></i>Sign Up / Log In</label></a>
                 </li>
                 <li class="first-nav-item">
-                    <a href="" class="first-nav-link nav-name"><i class="fas fa-shopping-cart"></i>Cart(<span>2 Items</span>)</a>
+                    <a href="#" class="first-nav-link"><i class="fas fa-shopping-cart"></i>Cart(<span>2 Items</span>)</a>
                 </li>
                 <li class="first-nav-item">
-                    <a href="" class="first-nav-link nav-name"><i class="fas fa-truck"></i>Order Now</a>
+                    <a href="#" class="first-nav-link"><i class="fas fa-truck"></i>Order Now</a>
                 </li>
                 <li class="first-nav-item">
-                    <a href="" class="first-nav-link nav-name"><i class="fas fa-heart"></i>Wish List</a>
+                    <a href="#" class="first-nav-link"><i class="fas fa-heart"></i>Wish List</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Search">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+
+        <nav class="second-nav">
+            <ul class="second-nav-list">
+                <li class="second-nav-item">
+                    <a href="#" class="second-nav-link">Furniture</a>
+                    <div class="dropdown">
+                        <ul class="dropdown-first-list">
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Sofas</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Sectionals</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Daybeds & Chaises</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Consolas & Credenzas</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Chairs</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Benches & Ottomans</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Dressers & Chests</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Dining Tables</a>
+                            </li>
+                        </ul>
+                        <ul class="dropdown-second-list">
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Stewart Collection</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Made by Maxwell</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Home & Heart</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Little Casita</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">The Luxury Living Collection</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Hot House</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">All Things Gold</a>
+                            </li>
+                        </ul>
+                        <img src="/images/dropdown-image.jpg" alt="dropdown image" class="dropdown-image">
+                    </div>
+                </li>
+                <li class="second-nav-item">
+                    <a href="#" class="second-nav-link">Rooms</a>
+                    <div class="dropdown">
+                        <ul class="dropdown-first-list">
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Living Room</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Dining Room</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Kitchen</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Bedroom</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Mud Room</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Study/Library</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Laundry Room</a>
+                            </li>
+                            <li class="dropdown-list-item">
+                                <a href="#" class="dropdown-list-link">Game Room</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="second-nav-item">
+                    <a href="#" class="second-nav-link">Outdoor</a>
+                </li>
+                <li class="second-nav-item">
+                    <a href="#" class="second-nav-link">Lighting</a>
+                </li>
+                <li class="second-nav-item">
+                    <a href="#" class="second-nav-link">Bed & Bath</a>
+                </li>
+                <li class="second-nav-item">
+                    <a href="#" class="second-nav-link">Windows</a>
                 </li>
 
             </ul>
-        </nav>
-        
-<!-- End of Navbar-->
 
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <!-- Banner -->
+
+        <section class="banner">
+            <div class="banner-content">
+                <h1 class="banner-heading">Holiday Sale</h1>
+                <button class="banner-btn">
+                    <span class="banner-btn-text-one">Shop Now</span>
+                    <span class="banner-btn-text-two">Before It's Over</span>
+                </button>
+            </div>
+
+            <div class="slideshow">
+                <button class="slide-btn slide-btn-1"></button>
+                <button class="slide-btn slide-btn-2"></button>
+                <button class="slide-btn slide-btn-3"></button>
+                <button class="slide-btn slide-btn-4"></button>
+                <div class="slideshow-wrapper">
+                    <div class="slide">
+                        <img src="/images/slide-img-1.jpg" style="width: 100%" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/slide-img-2.jpg" style="width: 100%" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/slide-img-3.jpg" style="width: 100%" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="/images/slide-img-4.jpg" style="width: 100%" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+        <!-- End of Banner -->
+
+        <!-- Color Block-->
+
+        <div class="day-offer">
+            <img src="/images/day-offer-img-one.jpg" class="day-offer-img-one" alt="Picture of chair and plant">
+            <h1 class="day-offer-heading">Color Block</h1>
+            <p class="day-offer-paragraph">Don't be afraid to mix colors!</p>
+            <button class="day-offer-btn">Be Inspired</button>
+            <img src="/images/day-offer-img-two.jpg" class="day-offer-img-two" alt="Plant sitting on a chair">
+        </div>
+
+        <!-- Color Block -->
+
+        <!-- Best Sellers -->
+
+        <section class="bestselling-furniture">
+            <h1 class="bestselling-furniture-header">Best Sellers</h1>
+
+            <div class="bestselling-furniture-cards">
+                <div class="bestselling-furniture-card">
+                    <img src="/images/bestselling-furniture-kitchen.jpg" class="bestselling-furniture-img" alt="">
+                    <h2 class="bestselling-furniture-heading">Kitchen Cabinets</h2>
+                    <p class="bestselling-furniture-paragraph">Cost: $15,000.00</p>
+                    <button class="bestselling-furniture-btn">Buy Now</button>
+                </div>
+                <div class="bestselling-furniture-card">
+                    <img src="/images/bestselling-furniture-wardrobe.jpg" class="bestselling-furniture-img" alt="">
+                    <h2 class="bestselling-furniture-heading">Custom Wardrobe</h2>
+                    <p class="bestselling-furniture-paragraph">Cost: $10,000.00</p>
+                    <button class="bestselling-furniture-btn">Buy Now</button>
+                </div>
+                <div class="bestselling-furniture-card">
+                    <img src="/images/bestselling-furniture-sofa.jpg" class="bestselling-furniture-img" alt="">
+                    <h2 class="bestselling-furniture-heading">Saul Life Sofa</h2>
+                    <p class="bestselling-furniture-paragraph">Cost: $1,299.99</p>
+                    <button class="bestselling-furniture-btn">Buy Now</button>
+                </div>
+                <div class="bestselling-furniture-card">
+                    <img src="/images/bestselling-furniture-table.jpg" class="bestselling-furniture-img" alt="">
+                    <h2 class="bestselling-furniture-heading">Farmhouse Table</h2>
+                    <p class="bestselling-furniture-paragraph">Cost: $3,500.00</p>
+                    <button class="bestselling-furniture-btn">Buy Now</button>
+                </div>
+                <div class="bestselling-furniture-card">
+                    <img src="/images/bestselling-furniture-bed.jpg" class="bestselling-furniture-img" alt="">
+                    <h2 class="bestselling-furniture-heading">Dlo Twin Bed</h2>
+                    <p class="bestselling-furniture-paragraph">Cost: $900.00</p>
+                    <button class="bestselling-furniture-btn">Buy Now</button>
+                </div>
+                <div class="bestselling-furniture-card">
+                    <img src="/images/bestselling-furniture-chairs.jpg" class="bestselling-furniture-img" alt="">
+                    <h2 class="bestselling-furniture-heading">Jetsons Chairs</h2>
+                    <p class="bestselling-furniture-paragraph">Cost: $1000.00</p>
+                    <button class="bestselling-furniture-btn">Buy Now</button>
+                </div>
+                <!-- <div class="bestselling-furniture-card">
+                    <img src="/images/bestselling-furniture-yellow-chair.jpg" class="bestselling-furniture-img" style="height: 32.5%;" alt="">
+                    <h2 class="bestselling-furniture-heading">Sunny Chair</h2>
+                    <p class="bestselling-furniture-paragraph">Cost: $600.00</p>
+                    <button class="bestselling-furniture-btn">Buy Now</button>
+                </div>
+                <div class="bestselling-furniture-card">
+                    <img src="/images/bestselling-furniture-hanging-chairs.jpg" class="bestselling-furniture-img" style="height: 32.5%;" alt="">
+                    <h2 class="bestselling-furniture-heading">Hanging Chairs</h2>
+                    <p class="bestselling-furniture-paragraph">Cost: $1000.00</p>
+                    <button class="bestselling-furniture-btn">Buy Now</button> -->
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Best Sellers End-->
+
+
+        <!-- gallery -->
+
+        <section class="gallery">
+            <img src="/images/gallery-img-1.jpeg" class="gallery-img gallery-img1" alt="">
+            <img src="/images/gallery-img-2.jpeg" class="gallery-img gallery-img2" alt="">
+            <img src="/images/gallery-img-3.jpeg" class="gallery-img gallery-img3" alt="">
+            <img src="/images/gallery-img-4.jpeg" class="gallery-img gallery-img4" alt="">
+            <img src="/images/gallery-img-5.jpeg" class="gallery-img gallery-img5" alt="">
+            <img src="/images/gallery-img-6.jpeg" class="gallery-img gallery-img6" alt="">
+            <img src="/images/gallery-img-7.jpeg" class="gallery-img gallery-img7" alt="">
+            <img src="/images/gallery-img-8.jpeg" class="gallery-img gallery-img8" alt="">
+            <img src="/images/gallery-img-9.jpeg" class="gallery-img gallery-img9" alt="">
+            <img src="/images/gallery-img-10.jpeg" class="gallery-img gallery-img10" alt="">
+            <img src="/images/gallery-img-11.jpeg" class="gallery-img gallery-img11" alt="">
+            <img src="/images/gallery-img-12.jpeg" class="gallery-img gallery-img12" alt="">
+        </section>
+
+
+        <!-- gallery end -->
+
+
+        <!-- Contact -->
+
+        <section class="contact">
+            <h1 class="contact-heading">Love our style? Keep in Contact.</h1>
+            <form class="contact-form">
+                <input type="text" class="contact-input" placeholder="Enter your email...">
+                <input type="submit" class="contact-btn" value="Sign Up">
+            </form>
+        </section>
+
+        <!-- End of Contact-->
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <p>&copy; Tephaney Stewart. All Rights Reserved.</p>
+        </footer>
+
+
+
+        <!-- End of Footer-->
     </div>
+
+
 
 </body>
 </html>
